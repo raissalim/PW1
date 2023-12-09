@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de  Reserva!</title>
+    <link rel="stylesheet" type="text/css" href="Formu.css">
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body class="Corpo">
+                        <!--navbar!-->
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" id="navbar"href="#" ><img width="60px"src="20231002_180215_0001-removebg-preview(1).png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Formulário </a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Procurar pacote</button>
+                    </form>
+                    </div>
+                    </div>
+                    </nav>
+<center>
+    <h2 class="cabe">Faça sua Reserva!-->
+    </h2>
+
+    <form id="reservationForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="Telefone">Telefone:</label>
+        <input type="Fone" id="Telefone" name="Telefone" required><br>
+
+        <label for="suite">Escolha a Suite:</label>
+        <select id="suite" name="suite">
+            <option value="standard">Standard - R$100,00</option>
+            <option value="exclusive">Exclusive - R$200,00</option>
+            <option value="luxo">Luxo - R$1200,00</option>
+            <option value="familia">Familia - R$900,00</option>
+            <option value="luxo">Reservada  - R$800,00</option>
+            
+        </select><br>
+
+        <label>Serviços Adicionais:</label><br>
+        <input type="checkbox" id="lavanderia" name="servicos" value="lavanderia">
+        <label for="lavanderia">Serviço de Lavanderia</label><br>
+
+        <input type="checkbox" id="refeicoes" name="servicos" value="refeicoes">
+        <label for="refeicoes">Refeições Incluídas</label><br>
+
+        <input type="checkbox" id="cityTour" name="servicos" value="cityTour">
+        <label for="cityTour">City Tour</label><br>
+        <input type="checkbox" id="PasseioDebalao" name="servicos" value="PasseioDebalao">
+        <label for="PasseioDebalao">PasseioDebalao</label><br>
+
+        <label for="diarias">Número de Diárias:</label>
+        <input type="text" id="diarias" name="diarias" required><br>
+
+        <button type="button" onclick="calcularDiarias()">Calcular Diárias</button><br>
+
+        <label for="total">Valor Total:</label>
+        <input type="text" id="total" name="total" readonly>
+        <br>
+        <br>
+        <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Comentários</label><br>
+</div>
+    </form>
+                        <center>
+                    <div class="container text-center">
+                    <div class="row">
+                    <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                    <img width="350px" height="500px"src="6e7112ca9cc7901e3550e13afc539661.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Passeios balão </p>
+                    </div>
+                    <a href="#" class="btn btn-primary"id="ola">Saiba mais</a>
+                    </div>
+                    </div>
+                    <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                    <img width="350px" height="500px"src="a31dd9e112902b135075b4eb614feac7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Iate</p>
+                    </div>
+                    <a href="#"  class="btn btn-primary"id="ola">Saiba mais</a>
+                    </div>
+                    </div>
+                    <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                    <img width="350px" height="500px"src="b3b53b898c155114c01dcd68ce780283.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text"> Paraquedismo e muito mais!</p>
+                    </div>
+                    <a href="#" class="btn btn-primary
+                    "id="ola">Saiba mais</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div> 
+                    <br> 
+                    <br>
+                    </center><br> <br>
+                     <center>
+                    <div class="container text-center">
+                    <div class="row">
+                    <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                    <img width="350px" height="500px"src="6a7f4fca12336587b99ea27cd7b797fa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Passeios balão </p>
+                    </div>
+                    <a href="#" class="btn btn-primary"id="ola">Saiba mais</a>
+                    </div>
+                    </div>
+                    <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                    <img width="350px" height="500px"src="6f6ed805c8862f0fbf0a97c0e747e3c6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Iate</p>
+                    </div>
+                    <a href="#"  class="btn btn-primary"id="ola">Saiba mais</a>
+                    </div>
+                    </div>
+                    <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                    <img width="350px" height="500px"src="2febbd107f39b4f4cb4c0ce693ef1a61.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text"> Paraquedismo e muito mais!</p>
+                    </div>
+                    <a href="#" class="btn btn-primary
+                    "id="ola">Saiba mais</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div> 
+                    <br> 
+                    <br>
+                    </center>
+                    <br>
+                                        <div class="headr">
+                    <p><h3>Quem somos nós </h3></p>
+                    </header>
+                    <header>
+                    <p><h2>Acompanhe</h2></p>
+         <p> <a href="https://instagram.com/caribe.house?igshid=MzMyNGUyNmU2YQ==">Instagram</a></p>
+         <p><a href="https://www.freecodecamp.org/">e-mail</a>.</p>
+         <p><h2>Jeito CaribeHouse</h2></p>
+         <li>Termos e privacidades</li>
+         <li>politica de cookies</li>
+         <li>Consulte</li>
+     
+       </center> 
+<footer width="100%">
+        <div class="rodape">&copy; Todos os direitos reservados<br> CaribeHouse -  R. Feliciano de Mendonça, 290 - Guaianases, São-paulo</div>
+    </footer>
+
+    <script src="js/calcularDiarias.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+                  
+
+</body>
+
+</html>
