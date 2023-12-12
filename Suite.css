@@ -1,0 +1,30 @@
+.Corpo{
+    background-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar{
+background-color: #2CD0DB;
+width:365px;
+height:70px;
+}
+#ola{
+  background:#2CD0DB;
+  border:1px solid #2CD0DB;
+  color:black;
+  opacity:0.7
+}
+.cabe{
+    color:#2CD0DB;
+}
+.headr{
+width:1000x;
+height :500px;
+background-color:#2CD0DB ;
+opacity:0.7
+}
+.rodape{
+    opacity:0.7;
+    background-color:#2CD0DB ;
+    opacity:0.8;
+    border:2px solid black;
+}
